@@ -77,6 +77,8 @@ public class Controller extends JPanel implements ActionListener{
 		add(buttons);
 
 	}
+	
+	/** This function saves the final java code to the specified file location with name output.java. */
 	private void saveFile(){
 		String content = toStr();
 		//Change the path here! 
