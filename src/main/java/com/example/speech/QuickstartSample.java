@@ -16,8 +16,6 @@
 
 package com.example.speech;
 
-// [START speech_quickstart]
-// Imports the Google Cloud client library
 import com.google.cloud.speech.v1p1beta1.RecognitionAudio;
 import com.google.cloud.speech.v1p1beta1.RecognitionConfig;
 import com.google.cloud.speech.v1p1beta1.RecognitionConfig.AudioEncoding;
@@ -33,9 +31,6 @@ import java.util.List;
 
 public class QuickstartSample {
 
-  /**
-   * Demonstrates using the Speech API to transcribe an audio file.
-   */
   public static String recognize() throws Exception {
     // Instantiates a client
 	  String newStr  = "";
@@ -73,4 +68,3 @@ public class QuickstartSample {
     }
   }
 }
-// [END speech_quickstart]

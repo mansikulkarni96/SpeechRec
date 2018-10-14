@@ -7,6 +7,14 @@ public class Function {
 	String returnType;
 	Variable [] parametrs;
 	
+	/**
+	 * constructor for class function 
+	 * @param nm
+	 * @param st
+	 * @param pr
+	 * @param rT
+	 * @param p
+	 */
 	public Function(String nm, String st, String pr, String rT, Variable[] p) {
 		name = nm;
 		sstatic = (st.length() != 0) ? st: "";

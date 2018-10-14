@@ -34,9 +34,8 @@ public class Controller extends JPanel implements ActionListener{
 	JButton proceed;
 	JPanel buttons;
 
-
 	/**
-	 * Constructor
+	 * Constructor for this class
 	 */
 	public Controller(){
 		process = new Process();
@@ -45,15 +44,9 @@ public class Controller extends JPanel implements ActionListener{
 		panel();
 	}
 
-
-	private void process() {
-		boolean notDone = true;
-
-	}
-
-
 	/**
-	 * Set up the visualization
+	 * This function sets up the structure and components
+	 * of the GUI.
 	 */
 	public void panel(){
 		this.setLayout(new FlowLayout());
@@ -70,7 +63,6 @@ public class Controller extends JPanel implements ActionListener{
 		display.setEditable(true);
 		display.setTabSize(2);
 		display.setMargin(new Insets(0, 20, 0, 0));
-		
 		
 		enter = new JButton("rec ●");
 		enter.setActionCommand("enter");
@@ -90,9 +82,12 @@ public class Controller extends JPanel implements ActionListener{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
-
+	
+	/**
+	 * This function converts current string array input to a string.
+	 * @return
+	 */
 	private String toStr() {
 		String res = "";
 		for(int i = 0; i< currentFile.length; i++) {
@@ -100,6 +95,11 @@ public class Controller extends JPanel implements ActionListener{
 		}
 		return res;
 	}
+	
+	/**
+	 * This function captures the action input events from the GUI
+	 * and performs the specified actions.
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getActionCommand().equals("proceed")) {
@@ -109,11 +109,9 @@ public class Controller extends JPanel implements ActionListener{
 			lineNum();
 		}
 		if (e.getActionCommand().equals("enter")) {
-			//activate recording - to speech stuff 
-			//returns string 
-			//call proccessing unit, passing current file 
-			//returns an array of strings
-			//set TextArea to array of Strings.
+			
+			/* calls the processing unit, passing the current file and returns
+			   an array of strings which sets TextArea to array of Strings */
 			recorder.record();
 			try {
 				latest = QuickstartSample.recognize();
@@ -121,30 +119,28 @@ public class Controller extends JPanel implements ActionListener{
 				lineNum();
 
 			} catch (Exception e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
-			/*String newStr = SpeechRecognizer.recognize();
-			currentFile = Process.process(currentFile, newStr);
-
-			display.setText(currentFile.toString()); //not sure what tostring will return
-			lineNum();
-			 */
 		}
 	}
-
-
+	/**
+	 * This function keeps track of line numbers.
+	 */
 	public void lineNum() {
 		String num = "";
-
 		for(int i = 0; i< currentFile.length; i++) {
 			num = num + " " + (i+1) +"\n";
 		}
-
 		lineNum.setText(num);
-
 	}
 	
+	/**
+	 * This function merges two arrays from 
+	 * currentFile and latest recognition result.
+	 * @param a1
+	 * @param a2
+	 * @return final array
+	 */
 	public static String[] concatArr(String[] a1, String[] a2) {
 		String[] newArr = new String[a1.length + a2.length];
 		for(int i = 0; i < a1.length; i++) {

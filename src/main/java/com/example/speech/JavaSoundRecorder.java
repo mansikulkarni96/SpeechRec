@@ -67,6 +67,5 @@ public class JavaSoundRecorder {
         line.stop();
         line.close();
     }
- 
-    
+   
 }

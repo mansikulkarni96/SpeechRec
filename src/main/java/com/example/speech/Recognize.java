@@ -115,7 +115,6 @@ public class Recognize {
     }
   }
 
-  // [START speech_transcribe_sync]
   /**
    * Performs speech recognition on raw PCM audio and prints the transcription.
    *
@@ -148,8 +147,7 @@ public class Recognize {
       }
     }
   }
-  // [END speech_transcribe_sync]
-
+ 
   /**
    * Performs sync recognize and prints word time offsets.
    *
@@ -193,7 +191,6 @@ public class Recognize {
     }
   }
 
-  // [START speech_transcribe_sync_gcs]
   /**
    * Performs speech recognition on remote FLAC file and prints the transcription.
    *
@@ -223,9 +220,7 @@ public class Recognize {
       }
     }
   }
-  // [END speech_transcribe_sync_gcs]
-
-  // [START speech_transcribe_async]
+  
   /**
    * Performs non-blocking speech recognition on raw PCM audio and prints the transcription. Note
    * that transcription is limited to 60 seconds audio.
@@ -268,9 +263,7 @@ public class Recognize {
       }
     }
   }
-  // [END speech_transcribe_async]
-
-  // [START speech_transcribe_async_word_time_offsets_gcs]
+ 
   /**
    * Performs non-blocking speech recognition on remote FLAC file and prints the transcription as
    * well as word time offsets.
@@ -318,9 +311,7 @@ public class Recognize {
       }
     }
   }
-  // [END speech_transcribe_async_word_time_offsets_gcs]
-
-  // [START speech_transcribe_async_gcs]
+  
   /**
    * Performs non-blocking speech recognition on remote FLAC file and prints the transcription.
    *
@@ -357,9 +348,7 @@ public class Recognize {
       }
     }
   }
-  // [END speech_transcribe_async_gcs]
-
-  // [START speech_transcribe_streaming]
+ 
   /**
    * Performs streaming speech recognition on raw PCM audio data.
    *
@@ -444,9 +433,7 @@ public class Recognize {
       }
     }
   }
-  // [END speech_transcribe_streaming]
-
-  // [START speech_sync_recognize_punctuation]
+  
   /**
    * Performs transcription with automatic punctuation on raw PCM audio data.
    *
@@ -484,9 +471,7 @@ public class Recognize {
       System.out.printf("Transcript : %s\n", alternative.getTranscript());
     }
   }
-  // [END speech_sync_recognize_punctuation]
 
-  // [START speech_transcribe_auto_punctuation]
   /**
    * Performs transcription on remote FLAC file and prints the transcription.
    *
@@ -526,9 +511,7 @@ public class Recognize {
       System.out.printf("Transcript : %s\n", alternative.getTranscript());
     }
   }
-  // [END speech_transcribe_auto_punctuation]
 
-  // [START speech_stream_recognize_punctuation]
   /**
    * Performs streaming speech recognition on raw PCM audio data.
    *
@@ -615,9 +598,7 @@ public class Recognize {
       }
     }
   }
-  // [END speech_stream_recognize_punctuation]
 
-  // [START speech_transcribe_streaming_mic]
   /** Performs microphone streaming speech recognition with a duration of 1 minute. */
   public static void streamingMicRecognize() throws Exception {
 
@@ -706,9 +687,7 @@ public class Recognize {
     }
     responseObserver.onComplete();
   }
-  // [END speech_transcribe_streaming_mic]
 
-  // [START speech_transcribe_enhanced_model]
   /**
    * Transcribe the given audio file using an enhanced model.
    *
@@ -748,9 +727,7 @@ public class Recognize {
       }
     }
   }
-  // [END speech_transcribe_enhanced_model]
 
-  // [START speech_transcribe_model_selection]
   /**
    * Performs transcription of the given audio file synchronously with the selected model.
    *
@@ -785,9 +762,7 @@ public class Recognize {
       System.out.printf("Transcript : %s\n", alternative.getTranscript());
     }
   }
-  // [END speech_transcribe_model_selection]
 
-  // [START speech_transcribe_model_selection_gcs]
   /**
    * Performs transcription of the remote audio file asynchronously with the selected model.
    *
@@ -829,5 +804,4 @@ public class Recognize {
       System.out.printf("Transcript : %s\n", alternative.getTranscript());
     }
   }
-  // [END speech_transcribe_model_selection_gcs]
 }
