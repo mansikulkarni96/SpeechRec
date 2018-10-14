@@ -16,11 +16,13 @@ We made it using Java APIs and Google Cloud Platform
 How to use: 
 
 [Documentation](/Documentation)
+
 [Commands](/Documentation/Commands)
 
 more:
 
 [Design](/Documentation/"Design.png")
+
 [JavaDocs]()
 
 
