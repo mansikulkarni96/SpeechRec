@@ -23,7 +23,7 @@ more:
 
 [Design](/Documentation/Design.png)
 
-[JavaDocs](/docs)
+[JavaDocs](/doc)
 
 
 
