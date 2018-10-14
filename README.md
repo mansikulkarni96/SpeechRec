@@ -21,7 +21,7 @@ How to use:
 
 more:
 
-[Design](/Documentation/"Design.png")
+[Design](/Documentation/Design.png)
 
 [JavaDocs]()
 
