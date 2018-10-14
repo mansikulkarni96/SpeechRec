@@ -12,3 +12,16 @@ Our project allows the users to code without really typing anything on the keybo
 
 How we built it:
 We made it using Java APIs and Google Cloud Platform
+
+How to use: 
+
+[Documentation](/Documentation)
+[Commands](/Documentation/Commands)
+
+more:
+
+[Design](/Documentation/"Design.png")
+[JavaDocs]()
+
+
+
