@@ -75,7 +75,11 @@ public class Controller extends JPanel implements ActionListener{
 		proceed.addActionListener(this);
 		buttons.add(proceed);
 		add(buttons);
+
+	}
+	private void saveFile(){
 		String content = toStr();
+		//Change the path here! 
 		String path = "/Users/mkulkarni/Downloads/java-docs-samples-master/speech/cloud-client/resources/output.java";
 		try {
 			Files.write(Paths.get(path), content.getBytes(), StandardOpenOption.CREATE);
@@ -107,6 +111,7 @@ public class Controller extends JPanel implements ActionListener{
 			currentFile = concatArr(currentFile, a1);
 			display.setText(toStr());
 			lineNum();
+			saveFile();
 		}
 		if (e.getActionCommand().equals("enter")) {
 			
