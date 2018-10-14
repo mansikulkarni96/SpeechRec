@@ -1,0 +1,32 @@
+The purpose of this project is to be a tool to code for those who are unable to type.
+The concept is that those people will speak to their computers, in a specific syntax, 
+and the program will output cohesive code. 
+
+
+Here is how this happens:
+
+The program takes in the voice input and parses it into text using the Google Cloud Platform.
+The user receives the transcribed text and if the transcription is satisfiable, the user clicks "proceed".
+If something went wrong, the user is able to rerecord it. 
+
+After the user chooses to proceed, the program takes the transcribed text and breaks it up into sections. 
+Each section is either a line of code, or a command to do something else in the text editor. 
+It will store each segment of text in a String array. 
+After the text is all broken up, the program will iterate through the array. 
+For each string, the program will figure out what keywords exist and perform the necessary actions.
+
+
+
+What are keywords?
+
+Keywords are identifiers in the text that are short syntax for a task that might take longer to otherwise type or talk out. For instance, if a user wanted to write a statement to print to console, they could just use the keyword “print” instead of writing out “system.out.print”, and the program would interpret “print” as the print statement.
+There are 4 main groups of keywords: dynamic keywords, static keywords, variables and functions. 
+Dynamic keywords contain commands such as "create main" "go to line" etc. 
+Static keywords have the frequently occured words that should be replaced by a specific symbol/code sequence. ("plus" -> +, "one" -> 1 etc.) 
+Variables keep track of existing variables to increase the recognition rate. 
+Functions store the necessary information about the functions so it's easier to use them in future. 
+
+After identifying the keywords, the program will use them to generate the code. 
+The virtualization of the processed code is stored in a String array. 
+Keywords are stored in HashMap where the key is the keyword, and the value is the id of a corresponding data structure that contains this group of keywords. 
+The goal of this step is to use the keywords, and the following words to create a cohesive block of code. If I were to say “print hello world”, it would create a block of code saying “system.out.print(“hello world”); “ and place it in the GUI representation.
