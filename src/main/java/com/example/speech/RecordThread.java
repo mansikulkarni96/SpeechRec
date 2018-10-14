@@ -1,7 +1,7 @@
 package com.example.speech;
 
 public class RecordThread {
-	  // record duration, in milliseconds
+	// records duration, in milliseconds
     static final long RECORD_TIME = 5000;  // 15 secs
  
 	/**
@@ -11,8 +11,8 @@ public class RecordThread {
         final JavaSoundRecorder recorder = new JavaSoundRecorder();
         
  
-        // creates a new thread that waits for a specified
-        // of time before stopping
+        /* creates a new thread that waits for a specified
+         amount of time before stopping */
         Thread stopper = new Thread(new Runnable() {
             public void run() {
                 try {
@@ -25,7 +25,7 @@ public class RecordThread {
         });
  
         stopper.start();
- 
+
         // start recording
         recorder.start();
     }
