@@ -1,1 +1,51 @@
 
+Implemented:
+
+Every line should end with "pumpkin" 
+Happy Halloween! Weeeee! 
+
+create class <className> -> public class <className>
+body -> {
+create main -> public static void main(String [] args)
+print <words>-> System.out.print("<words>"); 
+end body -> }
+
+To do
+
+
+
+create function <name>                      |      creates a function called name with described specification, or default:
+  <privacy>                                 |      public void <name> ()
+  <static>                                  |
+  return type <>                            |
+  takes parameter <type> name, <type> name  |
+  
+  
+to word                                     |      interprets the following word as a word and not a keyword
+
+go to 
+      line <number>                         |      sets cursor to the begining of specified line
+      <function name>                       |      sets cursor to the fisrt line of the body of specified function
+      <main>                                |      goes to first line of  main
+      <variable name>                       |      goes to the declaration of variable in scope
+      
+if/else
+while
+do while
+for
+
+switch/case
+
+import
+
+delete line
+
+right
+left
+backspace
+insert
+
+initialize <variable name> 
+      
+
+
