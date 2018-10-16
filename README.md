@@ -25,5 +25,11 @@ more:
 
 [JavaDocs](/doc)
 
+Created By:
+Mansi Kulkarni
+Mari Lifshits
+Artem Aleksanyan
+Sierra Jiang
+
 
 
