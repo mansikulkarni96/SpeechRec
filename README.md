@@ -26,9 +26,9 @@ more:
 [JavaDocs](/doc)
 
 Created By:
-Mansi Kulkarni
-Maria Lifshits
-Artem Aleksanyan
+Mansi Kulkarni,
+Maria Lifshits,
+Artem Aleksanyan,
 Sierra Jiang
 
 
