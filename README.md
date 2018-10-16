@@ -1,4 +1,4 @@
-# SpeechRec(Hackathon Project for HackUMass2018)
+# SpeechRec:Hackathon Project for HackUMass2018
 A java application to turn verbal words into Java code
 
 Description:
