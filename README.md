@@ -27,7 +27,7 @@ more:
 
 Created By:
 Mansi Kulkarni
-Mari Lifshits
+Maria Lifshits
 Artem Aleksanyan
 Sierra Jiang
 
